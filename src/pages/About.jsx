@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
 
-// import CTA from "../components/CTA";
 //import { CTA } from "../components";
 import { skills } from "../constants";
 // import Experience from "./Experience";

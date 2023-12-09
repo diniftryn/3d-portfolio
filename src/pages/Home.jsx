@@ -1,21 +1,14 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
-// import { HomeInfo, Loader } from "../components";
-// import { Bird, Island, Plane, Sky } from "../models";
-import Loader from "../components/Loader";
-import HomeInfo from "../components/HomeInfo";
-import Sky from "../models/Sky";
-import Bird from "../models/Bird";
-import Plane from "../models/Plane";
-import Island from "../models/Island";
+import { HomeInfo, Loader } from "../components";
+import { Bird, Island, Plane, Sky } from "../models";
 
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
-  // audioRef.current.muted = true;
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
@@ -38,17 +31,6 @@ const Home = () => {
     const audioCurr = audioRef.current;
     if (isPlayingMusic) {
       audioCurr.play();
-      // audioRef.current.muted = false;
-      // const resp = audioCurr.play();
-      // if (resp !== undefined) {
-      //   resp
-      //     .then(() => {
-      //       audioCurr.play();
-      //     })
-      //     .catch(error => {
-      //       console.log(error);
-      //     });
-      // }
     }
 
     return () => {
@@ -106,7 +88,7 @@ const Home = () => {
           <Plane isRotating={isRotating} position={biplanePosition} rotation={[0, 20.1, 0]} scale={biplaneScale} />
         </Suspense>
       </Canvas>
-      <div className="absolute bottom-2 left-0 right-0 z-10 flex items-center justify-center">Hold mouse or press arrow left and right keys to navigate</div>
+      <div className="absolute bottom-2 left-0 right-0 z-10 flex items-center justify-center">Hold mouse or press arrow keys left and right to navigate</div>
 
       <div className="absolute bottom-2 left-2">
         <img src={!isPlayingMusic ? soundoff : soundon} alt="jukebox" onClick={() => setIsPlayingMusic(!isPlayingMusic)} className="w-10 h-10 cursor-pointer object-contain" />
