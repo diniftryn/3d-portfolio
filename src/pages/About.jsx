@@ -3,17 +3,28 @@ import "react-vertical-timeline-component/style.min.css";
 
 //import { CTA } from "../components";
 import { skills } from "../constants";
+import { avatar } from "../assets/images";
 // import Experience from "./Experience";
 
 const About = () => {
   return (
     <section className="max-container">
-      <h1 className="head-text">
-        Hello, I'm <span className="blue-gradient_text font-semibold drop-shadow"> Dini</span> 👋
-      </h1>
+      <div className="flex">
+        <div>
+          <h1 className="head-text">
+            Hello, I'm <span className="blue-gradient_text font-semibold drop-shadow"> Dini</span> 👋
+          </h1>
+          <div className="mt-5 mr-5 flex flex-col gap-7 text-slate-500">
+            <p>I'm a Software Engineer based in Singapore, passionate about developing full stack web and mobile applications.</p>
+            <p>
+              When learning something new, I hold onto the mindset of <i>all things are difficult before they are easy,</i> and that keeps me going.
+            </p>
+          </div>
+        </div>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Software Engineer based in Singapore, passionate about developing full stack web and mobile applications.</p>
+        <div className="flex-end lg:w-1/3 lg:h-1/3 mt-10">
+          <img className="drop-shadow" src={avatar} />
+        </div>
       </div>
 
       <div className="py-10 flex flex-col">

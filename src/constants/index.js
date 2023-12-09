@@ -167,7 +167,7 @@ export const projects = [
     iconUrl: car,
     theme: "btn-back-red",
     name: "TeslahSG",
-    description: "Developed a mini web ERP to integrate manual work processes for a hypothetical compnay, TeslahSG Pte Ltd. " + "Tech Stack: HTML, CSS, JavaScript, Bootstrap, PHP, MySQL. " + "Test the app using these credentials - username: dini201, password: 201.",
+    description: "Developed a mini web ERP to integrate manual work processes for a hypothetical company, TeslahSG Pte Ltd. " + "Tech Stack: HTML, CSS, JavaScript, Bootstrap, PHP, MySQL. " + "Test the app using these credentials - username: dini201, password: 201.",
     link: "https://teslahsg.dinifitriyani.com/",
     mockup: teslahsg
   },
