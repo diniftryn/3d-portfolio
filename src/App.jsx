@@ -1,11 +1,12 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Home, About, Projects, Contact } from "./pages";
-import { Navbar, Footer } from "./components";
+import { ScrollToTop, Navbar, Footer } from "./components";
 
 function App() {
   return (
     <main className="bg-slate-300/20 h-full">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
