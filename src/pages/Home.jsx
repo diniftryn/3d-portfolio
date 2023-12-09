@@ -106,7 +106,7 @@ const Home = () => {
           <Plane isRotating={isRotating} position={biplanePosition} rotation={[0, 20.1, 0]} scale={biplaneScale} />
         </Suspense>
       </Canvas>
-      <div className="absolute bottom-2 left-20">Hold mouse or press arrow left and right keys to navigate</div>
+      <div className="absolute bottom-2 left-0 right-0 z-10 flex items-center justify-center">Hold mouse or press arrow left and right keys to navigate</div>
 
       <div className="absolute bottom-2 left-2">
         <img src={!isPlayingMusic ? soundoff : soundon} alt="jukebox" onClick={() => setIsPlayingMusic(!isPlayingMusic)} className="w-10 h-10 cursor-pointer object-contain" />
