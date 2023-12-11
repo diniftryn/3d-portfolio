@@ -88,10 +88,12 @@ const Home = () => {
           <Plane isRotating={isRotating} position={biplanePosition} rotation={[0, 20.1, 0]} scale={biplaneScale} />
         </Suspense>
       </Canvas>
-      <div className="absolute bottom-2 left-0 right-0 z-10 flex items-center justify-center">Hold mouse or press arrow keys left and right to navigate</div>
+      <div className="flex">
+        <div className="absolute bottom-2 left-2">
+          <img src={!isPlayingMusic ? soundoff : soundon} alt="jukebox" onClick={() => setIsPlayingMusic(!isPlayingMusic)} className="w-10 h-10 cursor-pointer object-contain" />
+        </div>
 
-      <div className="absolute bottom-2 left-2">
-        <img src={!isPlayingMusic ? soundoff : soundon} alt="jukebox" onClick={() => setIsPlayingMusic(!isPlayingMusic)} className="w-10 h-10 cursor-pointer object-contain" />
+        <div className="mx-10 px-5 absolute bottom-2 left-0 right-0 flex items-center justify-center text-center">Hold mouse or press arrow keys left and right to navigate</div>
       </div>
     </section>
   );
