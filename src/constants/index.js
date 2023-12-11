@@ -182,7 +182,7 @@ export const projects = [
   {
     iconUrl: snapgram,
     theme: "btn-back-pink",
-    name: "Spend",
+    name: "Extrack",
     description: "Developed a mobile application to track expenses. Tech Stack: React Native ",
     link: "https://github.com/diniftryn/reactnative-budget-tracker",
     mockup: teslahsg
