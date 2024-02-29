@@ -9,7 +9,7 @@ import { avatar } from "../assets/images";
 const About = () => {
   return (
     <section className="max-container">
-      <div className="flex">
+      <div className="md:flex">
         <div>
           <h1 className="head-text">
             Hello, I'm <span className="blue-gradient_text font-semibold drop-shadow"> Dini</span> 👋
@@ -22,8 +22,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex-end lg:w-1/3 lg:h-1/3 mt-10">
-          <img className="drop-shadow" src={avatar} />
+        <div className="mt-10 flex justify-center">
+          <img className="drop-shadow w-60 md:w-fit" src={avatar} />
         </div>
       </div>
 

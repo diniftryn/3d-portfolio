@@ -1,6 +1,6 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
-import { car, contact, css, express, git, github, html, javascript, linkedin, mongodb, nodejs, pricewise, react, snapgram, bootstrap, tailwindcss, threads, postman, xampp } from "../assets/icons";
-import { teslahsg } from "../assets/mockup";
+import { car, contact, css, express, git, github, html, javascript, linkedin, mongodb, postgresql, mysql, nodejs, pricewise, react, bootstrap, tailwindcss, threads, postman, xampp, motion, mui, nextjs, typescript } from "../assets/icons";
+import { teslahsg, focus, productivity, moneybuds } from "../assets/mockup";
 
 export const skills = [
   {
@@ -18,21 +18,51 @@ export const skills = [
     name: "JavaScript",
     type: "Frontend"
   },
-  // {
-  //   imageUrl: motion,
-  //   name: "Motion",
-  //   type: "Animation"
-  // },
-  // {
-  //   imageUrl: mui,
-  //   name: "Material-UI",
-  //   type: "Frontend"
-  // },
-  // {
-  //   imageUrl: nextjs,
-  //   name: "Next.js",
-  //   type: "Frontend"
-  // },
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend"
+  },
+  {
+    imageUrl: bootstrap,
+    name: "Bootstrap",
+    type: "Frontend"
+  },
+  {
+    imageUrl: tailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend"
+  },
+  {
+    imageUrl: mui,
+    name: "Material-UI",
+    type: "Frontend"
+  },
+  {
+    imageUrl: react,
+    name: "React",
+    type: "Frontend"
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend"
+  },
+  {
+    imageUrl: motion,
+    name: "Motion",
+    type: "Animation"
+  },
+  {
+    imageUrl: mysql,
+    name: "MySQL",
+    type: "Database"
+  },
+  {
+    imageUrl: postgresql,
+    name: "MySQL",
+    type: "Database"
+  },
   {
     imageUrl: mongodb,
     name: "MongoDB",
@@ -42,11 +72,6 @@ export const skills = [
     imageUrl: express,
     name: "Express",
     type: "Backend"
-  },
-  {
-    imageUrl: react,
-    name: "React",
-    type: "Frontend"
   },
   {
     imageUrl: nodejs,
@@ -64,21 +89,7 @@ export const skills = [
   //   name: "Sass",
   //   type: "Frontend"
   // },
-  {
-    imageUrl: bootstrap,
-    name: "Bootstrap",
-    type: "Frontend"
-  },
-  {
-    imageUrl: tailwindcss,
-    name: "Tailwind CSS",
-    type: "Frontend"
-  },
-  // {
-  //   imageUrl: typescript,
-  //   name: "TypeScript",
-  //   type: "Frontend"
-  // }
+
   {
     imageUrl: git,
     name: "Git",
@@ -159,33 +170,51 @@ export const projects = [
     iconUrl: threads,
     theme: "btn-back-green",
     name: "Productivity Workspace",
-    description: "Created a full-stack web app that allows users to be productive by tracking their tasks and working through them via Pomodoro sessions. Tech Stack: MERN (MongoDB, Express.js, React.js, Node.js)",
+    tech: "MERN (MongoDB, Express.js, React.js, Node.js)",
+    description: "Inspired by how the Pomodoro technique has helped me get through my list of tasks, I decided to develop a web app that allows users to track their tasks and working through them via Pomodoro sessions.",
+    functionality: "JWT Authentication, Timer,  CRUD to add tasks, view, delete, update and mark as complete.",
     link: "https://productivity-workspace.vercel.app/",
-    mockup: teslahsg
+    mockup: productivity
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-black",
+    name: "Focus",
+    tech: "Next.js, Shadcn UI",
+    description: "Similar to the Productivity Workspace app, this app uses Next.js instead of React.",
+    functionality: "Timer,  CRUD to add tasks, view, delete, update and mark as complete.",
+    link: "https://focus-ecru.vercel.app/",
+    mockup: focus
   },
   {
     iconUrl: car,
     theme: "btn-back-red",
     name: "TeslahSG",
-    description: "Developed a mini web ERP to integrate manual work processes for a hypothetical company, TeslahSG Pte Ltd. " + "Tech Stack: HTML, CSS, JavaScript, Bootstrap, PHP, MySQL. " + "Test the app using these credentials - username: dini201, password: 201.",
+    tech: "HTML, CSS, JavaScript, Bootstrap, PHP, MySQL",
+    description: "Before graduating from my Diploma in IT, my last project was to develop a mini web ERP to integrate manual work processes for a hypothetical company, TeslahSG Pte Ltd. Test the app using these credentials - username: dini201, password: 201.",
+    functionality: "Authentication, Authorization, Session Management, CRUD to track sales orders, view, delete and update.",
     link: "https://teslahsg.dinifitriyani.com/",
     mockup: teslahsg
   },
+  // {
+  //   iconUrl: snapgram,
+  //   theme: "btn-back-blue",
+  //   name: "Booklibs",
+  //   tech: "Flutter, Firebase",
+  //   description: "Developed a mobile application for avid readers to track books they have read and wish to read.",
+  //   functionality: "Firebase Authentication, CRUD, Search, Implementation of Google API and JSON Parsing.",
+  //   link: "https://github.com/diniftryn/flutter-book-tracker",
+  //   mockup: ""
+  // },
   {
     iconUrl: pricewise,
-    theme: "btn-back-blue",
-    name: "Booklibs",
-    description: "Developed a mobile application for avid readers to track books they have read and wish to read. Functionality: Firebase Authentication, CRUD, Search, Implementation of Google API and JSON Parsing. Tech Stack: Flutter, Firebase",
-    link: "https://github.com/diniftryn/flutter-book-tracker",
-    mockup: teslahsg
-  },
-  {
-    iconUrl: snapgram,
     theme: "btn-back-pink",
-    name: "Extrack",
-    description: "Developed a mobile application to track expenses. Tech Stack: React Native ",
-    link: "https://github.com/diniftryn/reactnative-budget-tracker",
-    mockup: teslahsg
+    name: "moneybuds",
+    tech: "React Native, Supabase",
+    description: "Developed a mobile application to track and manage shared expenses.",
+    functionality: "Authentication, Accessing Contacts, Gallery and Camera, CRUD for friends, groups and expenses.",
+    link: "https://github.com/diniftryn/splitbill",
+    mockup: moneybuds
   }
   // {
   //   iconUrl: pricewise,

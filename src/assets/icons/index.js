@@ -29,5 +29,7 @@ import soundoff from "./soundoff.png";
 import bootstrap from "./bootstrap.svg";
 import postman from "./postman.svg";
 import xampp from "./xampp.svg";
+import postgresql from "./postgresql.svg";
+import mysql from "./mysql.svg";
 
-export { css, express, git, github, html, javascript, mongodb, motion, mui, nextjs, nodejs, react, redux, sass, tailwindcss, typescript, linkedin, twitter, car, estate, pricewise, snapgram, summiz, threads, arrow, contact, soundon, soundoff, bootstrap, postman, xampp };
+export { css, express, git, github, html, javascript, mongodb, postgresql, mysql, motion, mui, nextjs, nodejs, react, redux, sass, tailwindcss, typescript, linkedin, twitter, car, estate, pricewise, snapgram, summiz, threads, arrow, contact, soundon, soundoff, bootstrap, postman, xampp };
