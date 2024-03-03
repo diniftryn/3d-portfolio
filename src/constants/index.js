@@ -1,6 +1,6 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 import { car, contact, css, express, git, github, html, javascript, linkedin, mongodb, postgresql, mysql, nodejs, pricewise, react, bootstrap, tailwindcss, threads, postman, xampp, motion, mui, nextjs, typescript } from "../assets/icons";
-import { teslahsg, focus, productivity, moneybuds } from "../assets/mockup";
+import { teslahsg, focus, productivity, splitbill } from "../assets/mockup";
 
 export const skills = [
   {
@@ -209,12 +209,12 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: "btn-back-pink",
-    name: "moneybuds",
+    name: "Splitbill",
     tech: "React Native, Supabase",
     description: "Developed a mobile application to track and manage shared expenses.",
     functionality: "Authentication, Accessing Contacts, Gallery and Camera, CRUD for friends, groups and expenses.",
     link: "https://github.com/diniftryn/splitbill",
-    mockup: moneybuds
+    mockup: splitbill
   }
   // {
   //   iconUrl: pricewise,
