@@ -183,7 +183,7 @@ export const projects = [
     tech: "Next.js, Shadcn UI",
     description: "Similar to the Productivity Workspace app, this app uses Next.js instead of React.",
     functionality: "Timer,  CRUD to add tasks, view, delete, update and mark as complete.",
-    link: "https://focus-ecru.vercel.app/",
+    link: "https://next-focus-ecru.vercel.app/",
     mockup: focus
   },
   {
